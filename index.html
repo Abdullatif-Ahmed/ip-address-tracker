@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--map stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>IP Address Tracker</h1>
+        <div class="input-gr">
+          <input
+            type="search"
+            name=""
+            id="search-input"
+            placeholder=" Search for any IP address or domain"
+          />
+          <button id="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="ip-details">
+          <li>
+            <span>IP Address</span>
+            <h2 id="ip-address"></h2>
+          </li>
+          <li>
+            <span>Location</span>
+            <h2 id="location"></h2>
+          </li>
+          <li>
+            <span>Timezone</span>
+            <h2 id="timezone"></h2>
+          </li>
+          <li>
+            <span>ISP</span>
+            <h2 id="isp"></h2>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="map"></div>
+    <!-- add offset value dynamically using the API -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
